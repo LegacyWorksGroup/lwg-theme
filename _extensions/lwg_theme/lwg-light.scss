@@ -1,0 +1,69 @@
+/*-- scss:defaults --*/
+
+// Colors
+/* From LWG branding */
+$lwg-1: #396d60;
+$lwg-2: #398293;
+$lwg-3: #7bb881;
+$lwg-4: #a9d043;
+
+/* core competency colors */
+$cc-1: #0096c7;
+$cc-2: #ff9500;
+$cc-3: #55a630;
+$cc-4: #7b2cbf;
+
+/* generally useful other colors */
+$url-blue: #00b4d8;
+$cream: #F4F3EE;
+$charcoal: #191919;
+$gray-1: #8A817C;
+$gray-2: #BCB8B1;
+$gray-3: #d6d6d6;
+
+// Fonts
+$font-size: 25px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+// Base document colors
+$navbar-bg: $lwg-1; // navbar
+$navbar-fg: $cream; // navbar foreground elements
+$navbar-hl: $lwg-4; // highlight color when hovering on a page
+$sidebar-bg: $lwg-3; // sidebar
+$sidebar-fg: $charcoal; // sidebar foreground elements
+$body-bg: $cream; // page background
+$body-color: $charcoal; // page text
+$footer-bg: $lwg-2; // footer
+$footer-fg: $cream; // footer text
+$link-color: $url-blue; // hyperlinks
+
+// Code text
+$code-bg: $gray-2; // inline code background color
+$code-color: $charcoal; // inline code text color
+$code-block-bg: $gray-2; // code block background color
+
+/*-- scss:rules --*/
+
+// Underline URLs
+.reveal .slide a { text-decoration: underline; }
+
+// Quick refs for core palette
+.cc-value { color: $cc-1; }
+.cc-skill { color: $cc-2; }
+.cc-steward { color: $cc-3; }
+.cc-result { color: $cc-4; }
+
+// Increase contrast of text in tab panel label
+.nav-tabs .nav-link.active {background-color: #FFF;
+  color: $charcoal; }
+.nav-tabs .nav-link {background-color: #FFF;
+  color: $charcoal; }
+.tab-content {background-color: #FFF;
+  color: $charcoal; }
+
+// Improve contrast to callout backgrounds
+.callout-body {background-color: #FFF; 
+  color: $charcoal; }
+
+// Improve background contrast for code chunk ouput
+pre code:not(.sourceCode) { background-color: $gray-2; }
