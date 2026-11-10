@@ -8,10 +8,11 @@ $lwg-3: #7bb881;
 $lwg-4: #a9d043;
 
 /* core competency colors */
-$cc-1: #0096c7;
-$cc-2: #ff9500;
-$cc-3: #55a630;
-$cc-4: #7b2cbf;
+// Derived from core competency cards--added to learning catalog in 11/2026
+$cc-1: $lwg-2;
+$cc-2: $lwg-4;
+$cc-3: $lwg-1;
+$cc-4: $lwg-3;
 
 /* generally useful other colors */
 $url-blue: #00b4d8;
@@ -41,6 +42,12 @@ $link-color: $url-blue; // hyperlinks
 $code-bg: $gray-2; // inline code background color
 $code-color: $charcoal; // inline code text color
 $code-block-bg: $gray-2; // code block background color
+
+// Callout customizations
+$callout-color-note: $cc-1; // values
+$callout-color-warning: $cc-2; // skills
+$callout-color-tip: $cc-3; // stewardship
+$callout-color-caution: $cc-4; // results
 
 /*-- scss:rules --*/
 
